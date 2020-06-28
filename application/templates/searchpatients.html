@@ -1,0 +1,102 @@
+{% extends "index.html" %}
+{% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+        .table1{
+        
+        border-collapse:collapse;
+        margin-bottom:2em;
+        
+    }
+    .tr1{
+        margin:0;
+        padding:0px;
+    }
+    
+    .td1{
+        
+        padding-top:0px;
+        text-align: left;
+        font-weight: bold;
+        margin:0;
+    }
+    body {
+  overflow-x: hidden; /* Hide vertical scrollbar */
+    }
+
+
+
+
+ 
+</style>
+{% endblock %}
+{%block content %}
+
+<div class="form-horizontal example" style="text-align: center;">
+    <div style="margin-top:7em"><h4>View Patients</h4></div>
+ 
+
+  
+          <table style="margin-left:auto;margin-right: auto;margin-top: 2em;" class="table1">
+            <tr class="tr1">
+               <td> <label class="control-label required td1" for="patientid" required="required">Patient ID*&nbsp;</label></td>
+                <td class="td1">
+                    <span class="input-group">
+                        <input class="form-control py-2 border-right-0 border" height="0px" type="search" value="search" id="example-search-input">
+                        <span class="input-group-append">
+                            <span class="input-group-text bg-transparent"><i class="fa fa-search"></i></span>
+                        </span>
+                    </span>
+                  </td>
+                
+                  
+          
+                </tr> 
+                <tr class="tr1">
+                    <td class="td1">
+                        <label class="control-label required" for="patientid" required="required">Patient Name&nbsp</label></td>
+                    <td> <input type="text"  name="patientid">  </td>   
+                    </tr> 
+                    <tr class="tr1">
+                        <td class="td1">
+                            <label class="control-label required" for="patientid" required="required">Patient Age&nbsp</label></td>
+                        <td> <input type="text"  name="patientid">  </td>   
+                        </tr> 
+                        <tr class="tr1">
+                            <td class="td1">
+                                <label class="control-label required" for="patientid" required="required">Date of Admission&nbsp</label></td>
+                            <td> <input type="text"  name="patientid">  </td>   
+                            </tr> 
+                            <tr class="tr1">
+                                <td class="td1">
+                                    <label class="control-label required" for="patientid" required="required">Type of bed&nbsp</label></td>
+                                <td> <input type="text"  name="patientid">  </td>   
+                                </tr> 
+
+                                <tr class="tr1">
+                                    <td class="td1">
+                                        <label class="control-label required" for="patientid" required="required">Address&nbsp</label></td>
+                                    <td> <textarea id="w3review" name="w3review" rows="3" cols="50"></textarea>  </td>   
+                                    </tr> 
+                                    <tr class="tr1">
+                                        <td class="td1">
+                                            <label class="control-label required" for="patientid" required="required">State&nbsp</label></td>
+                                        <td> <input type="text"  name="patientid">  </td>   
+                                        </tr> 
+                                        <tr class="tr1">
+                                            <td class="td1">
+                                                <label class="control-label required" for="patientid" required="required">City&nbsp</label></td>
+                                            <td> <input type="text"  name="patientid">  </td>   
+                                            </tr> 
+                                            <tr>
+                                                <td>  <small style="text-align: center;font-weight: bold;">* Mandatory</small></td>
+                                            </tr>
+                                     
+   
+                  
+          </table>
+         
+{% endblock %}
+
+

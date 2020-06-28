@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>HMS</title>
+       <!-- <link rel="stylesheet" href="static/css/header.css"/>-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            
+#top{
+    background-color: #93CAF3;
+    display:block;
+    position:absolute;
+    width:101%;
+    top:0px;
+    margin-left:-8px;
+    height:100px;
+    text-align: center;
+} 
+select{
+    background-color:#2095F2 ;
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+}
+td{
+    padding:15px;
+}
+
+            </style>
+            {% block head%}
+
+            {% endblock %}
+    </head>
+
+    <body style="background-color:#2095F2;">
+       <div id="top">
+         <h2 style="margin-top: 0em;">ABC Hospital Management System</h2>
+         <table style="margin-left:auto;margin-right: auto;">
+            <tr>
+          <td style="text-align:left">
+          <select  id="sel1">
+            <option hidden disabled selected value>Patient</option>
+            <option>1111111111</option>
+            <option>2222222222</option>
+            <option>3333333333</option>
+            <option>4444444444</option>
+          </select>
+      </td> 
+      <td style="text-align:left">
+        <select  id="sel1" >
+          <option hidden disabled selected value>Pharmacy</option>
+          <option>1111111111</option>
+          <option>2222222222</option>
+          <option>3333333333</option>
+          <option>4444444444</option>
+        </select>
+    </td> 
+    <td style="text-align:left">
+        <select  id="sel1">
+          <option hidden disabled selected value>Diagnostics</option>
+          <option>1111111111</option>
+          <option>2222222222</option>
+          <option>3333333333</option>
+          <option>4444444444</option>
+        </select>
+    </td> 
+      </tr>
+</table>
+       </div>
+       <div>
+        {% block content%}
+
+        {% endblock %} 
+       </div>
+
+        
+    </body>
+
+    </html>

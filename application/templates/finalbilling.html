@@ -1,0 +1,192 @@
+{% extends "index.html" %}
+{% block head %}
+<style>
+    .table1{
+    border:1px solid black;
+    border-collapse:collapse;
+    margin-bottom:2em;
+}
+th{
+    color:#848484;
+    background-color:#2B2D2C;
+    border:1px solid black;
+    font-weight: normal;
+    text-align: center;
+    font-size: 12px;
+    padding:10px;
+}
+.td1{
+    border:1px solid black;
+    padding:5px;
+    background-color: #FAFAFA;
+    color:black;
+    text-align: center;
+    width: 200px;
+}
+.spl{
+    color:darkblue;
+    width:183px;
+    font-weight:bold;
+    text-align: left;
+}
+.val1{
+    color:darkblue;
+    width:80px;
+    text-align:left;
+}
+</style>
+{% endblock %}
+{%block content %}
+
+<div class="form-horizontal" style="text-align: center;">
+    <div style="margin-top:7em"><h6><b>Patient Billing</b></h6></div>
+
+          <table style="margin-left:auto;margin-right: auto;margin-top: 2em;" class="table1">
+            <tr >
+                <th>
+                    Patient ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Age
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    DOJ
+                </th>
+                <th>
+                    Type of Room
+                </th>
+            </tr>
+            <tr>
+                <td class="td1">1234</td>
+                <td class="td1">Joseph</td>
+                <td class="td1">56</td>
+                <td class="td1">Ameerpet,Hyderabad</td>
+                <td class="td1">03-May-2020</td>
+                <td class="td1">Single</td>
+                
+            </tr>
+   
+                  
+          </table>
+        </div>
+    </div>
+    <div >
+        <table style="margin-left:auto;margin-right: auto;margin-top: 2em;">
+            <tr>
+                <td class="spl">
+                    No.of days :
+                </td>
+                <td class="val1">
+
+                </td>
+                <td class="spl">
+                    Bill for room :
+                </td>
+                <td class="val1">
+                     Rs:56000
+                </td>
+            </tr>
+        </table>
+    </div>
+          <div class="form-horizontal" style="text-align: center;">
+            <div style="margin-top:2em"><h6><b>Pharmacy Charges</b></h6></div>
+        
+                  <table style="margin-left:auto;margin-right: auto;margin-top: 2em;" class="table1">
+                    <tr >
+                        <th>
+                            Medicine
+                        </th>
+                    
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Rate
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="td1">Acebutolol</td>
+                        <td class="td1">10</td>
+                        <td class="td1">Rs.55</td>
+                        <td class="td1">Rs.550</td>
+                    </tr>
+           
+                          
+                  </table>                </div>
+            </div>
+            <div >
+                <table style="margin-left:auto;margin-right: auto;margin-top: 2em;">
+                    <tr>
+                        <td class="spl">
+                            Bill for Pharmacy :
+                        </td>
+                        <td class="val1">
+                             Rs:4500
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-horizontal" style="text-align: center;">
+                <div style="margin-top:2em"><h6><b>Diagnostic Charges</b></h6></div>
+                <div style="display: inline-block;text-align:end">
+                  <table style="margin-left:auto;margin-right: auto;margin-top: 2em;" class="table1">
+                    <tr >
+                        <th>
+                            Name of the test
+                        </th>
+                        
+                        <th>
+                            Amount
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="td1">ECG</td>
+                       
+                        <td class="td1">Rs.3000</td>
+                        
+                    </tr>
+                    </table>
+              </div>
+     
+
+              
+                </div>   
+                <div >
+                    <table style="margin-left:auto;margin-right: auto;margin-top: 2em;">
+                        <tr>
+                            
+                            <td class="spl">
+                                Bill for Diagnostics :
+                            </td>
+                            <td class="val1">
+                                 Rs:10500
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div >
+                    <table style="margin-left:auto;margin-right: auto;margin-top: 2em;">
+                        <tr>
+                            <td>
+                                <button type="button" class="btn btn-primary" Style="color:yellow;background-color:black;border-radius: 15px;margin-top:0px;">Confirm</button>
+                            </td>
+                            <td class="spl">
+                                Grand Total
+                            </td>
+                            <td class="val1">
+                                 Rs.71000
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                {% endblock %}
